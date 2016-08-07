@@ -44,7 +44,7 @@ There are a number of problems with this project. Here they are listed here:
 - HHVM is running version 3.11 which is pretty old. The base image doesn't
     really allow us to control the version.
 
- - Apache has directory listing enabled. Look at http://localhost:8080/dir/ for
+- Apache has directory listing enabled. Look at http://localhost:8080/dir/ for
     an example.
 
 - The docker image is pretty huge and hold a lot of stuff. It's running:
