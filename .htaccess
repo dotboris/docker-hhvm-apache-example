@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^fake-file.txt$ /real-file.txt [L]
