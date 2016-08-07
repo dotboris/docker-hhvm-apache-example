@@ -6,3 +6,13 @@ services:
       - '8080:80'
     volumes:
       - './src:/app'
+  db:
+    image: percona:5.7
+    volumes:
+      - './tmp/db:/var/lib/mysql'
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: "$DB_PASSWORD"
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_ONETIME_PASSWORD: 'yes'
