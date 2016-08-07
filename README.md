@@ -45,3 +45,9 @@ There are a number of problems with this project. Here they are listed here:
   - cron
   - syslogd
   - ssh
+
+- The database files (`tmp/db/*`) are owned by a strange user. This is a side
+    effect of docker. The user inside the container running percona has an id
+    that may or may not be used inside the host.
+
+    This is fine but it could definately be worked on.
