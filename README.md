@@ -7,6 +7,14 @@ setup with HHVM and Apache.
 The idea is to have a relatively lighweight dev envrionment that can be a first
 step to running docker containers in production.
 
+Disclaimer
+----------
+
+The code in this repository is pure garbage. The goal of this repository is to
+show off a php (hhvm) + mysql development envrionment on top of docker-compose.
+The code was thrown together just to demonstrate that the pieces are working
+together. Please don't use this as an example of proper php.
+
 Usage
 -----
 
