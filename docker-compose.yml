@@ -6,10 +6,15 @@ services:
       - '8080:80'
     volumes:
       - './src:/app'
+    links:
+      - db
+    environment:
+      DB_PASSWORD: "$DB_PASSWORD"
   db:
     image: percona:5.7
     volumes:
       - './tmp/db:/var/lib/mysql'
+      - './db_setup:/docker-entrypoint-initdb.d'
     environment:
       MYSQL_DATABASE: app
       MYSQL_USER: app
