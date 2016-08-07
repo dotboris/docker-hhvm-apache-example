@@ -11,6 +11,12 @@ Usage
 -----
 
 1. Install Docker and Docker Compose
+1. Copy `.env.example` and `.env`
+
+    ```sh
+    cp .env.example .env
+    ```
+
 1. Start the project
 
     ```sh
